@@ -1,0 +1,48 @@
+{
+    "userDetails": [{
+        "name": "Shubam",
+        "expand": false,
+        "friends": [{
+            "name": "Yashika",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Satya",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Sakthi",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Nikhil",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Yousuf",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        }]
+    },{
+       "name": "Rajesh",
+       "expand": false,
+       "friends": [{
+           "name": "Shilpa",
+           "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+       },{
+           "name": "Somu",
+           "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+       }]
+    },{
+        "name": "Rakesh",
+        "expand": false,
+        "friends": [{
+            "name": "Raj",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Rajul",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Karen",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        },{
+            "name": "Kareena",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS59dpA3EGa545UeK9tymBwTVdaab_HRB2fTw&usqp=CAU"
+        }]
+    }]
+}

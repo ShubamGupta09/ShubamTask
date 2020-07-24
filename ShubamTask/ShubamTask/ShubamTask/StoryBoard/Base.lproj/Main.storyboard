@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OVm-d9-qjL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" id="BYZ-38-t0r" customClass="SelectionViewController" customModule="ShubamTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p0-UQ-Uxb">
+                                <rect key="frame" x="20" y="108" width="177" height="50"/>
+                                <color key="backgroundColor" red="0.054698713119999999" green="0.4076040983" blue="0.66520142559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8fu-ug-ray"/>
+                                </constraints>
+                                <state key="normal" title="Signle Selection">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSingleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vI1-YM-lA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwv-CY-X2q">
+                                <rect key="frame" x="217" y="108" width="177" height="50"/>
+                                <color key="backgroundColor" red="0.054698713119999999" green="0.4076040983" blue="0.66520142559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X6e-5F-NCK"/>
+                                </constraints>
+                                <state key="normal" title="Multiple Selection">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMutlipleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKC-B5-hV9"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VOy-Q9-FIf">
+                                <rect key="frame" x="20" y="170" width="374" height="680"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="Y2m-7Y-Wa7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CollectionHeaderReusableView" id="Ph6-a8-Sij" customClass="CollectionHeaderReusableView" customModule="ShubamTask" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2p0-UQ-Uxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9ht-ui-Hve"/>
+                            <constraint firstItem="jwv-CY-X2q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Giu-EA-6DM"/>
+                            <constraint firstItem="VOy-Q9-FIf" firstAttribute="top" secondItem="2p0-UQ-Uxb" secondAttribute="bottom" constant="12" id="Gpp-jO-KO0"/>
+                            <constraint firstItem="2p0-UQ-Uxb" firstAttribute="width" secondItem="jwv-CY-X2q" secondAttribute="width" id="SYo-E9-dbv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VOy-Q9-FIf" secondAttribute="bottom" constant="12" id="aCj-HB-lXZ"/>
+                            <constraint firstItem="jwv-CY-X2q" firstAttribute="leading" secondItem="2p0-UQ-Uxb" secondAttribute="trailing" constant="20" id="pUW-SG-0U4"/>
+                            <constraint firstItem="VOy-Q9-FIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sAZ-Zm-QGB"/>
+                            <constraint firstItem="2p0-UQ-Uxb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tqY-uN-8Sy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VOy-Q9-FIf" secondAttribute="trailing" constant="20" id="v0m-dZ-UCC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jwv-CY-X2q" secondAttribute="trailing" constant="20" id="vpt-3h-qf3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ehu-gw-2Mw"/>
+                    <connections>
+                        <outlet property="btnMultipleSelection" destination="jwv-CY-X2q" id="DQD-E1-QfP"/>
+                        <outlet property="btnSingleSelection" destination="2p0-UQ-Uxb" id="DjR-1A-67g"/>
+                        <outlet property="collectionView" destination="VOy-Q9-FIf" id="Sli-Se-Oyv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FrL-Ke-w3s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OVm-d9-qjL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sfc-1e-ouu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RKD-eN-p1c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prm-aB-NzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>
